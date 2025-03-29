@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ukuran font lebih kecil di perangkat mobile */
+    }
+
+    .product {
+        width: 100%;
+        margin: 5px; /* Mengurangi margin */
+    }
+
+    nav a {
+        font-size: 12px; /* Ukuran font untuk navigasi lebih kecil */
+    }
+}
+

@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "nama": "Produk A",
+        "harga": "Rp 100.000",
+        "gambar": "/public/assets/IMG_20250322_130742.jpg"
+    },
+    {
+        "id": 2,
+        "nama": "Produk B",
+        "harga": "Rp 150.000",
+        "gambar": "/public/assets/IMG_20250322_130852.jpg"
+    }
+]
+

@@ -1,0 +1,34 @@
+<h2>Daftar Produk</h2>
+<div id="product-list">Memuat produk...</div>
+<div id="products-container">
+<div id="loading-spinner" style="display:none;">Memuat...</div>
+    <p>Loading produk...</p>
+</div>
+
+<script>
+    async function loadProducts() {
+        let response = await fetch("http://127.0.0.1:8080/products");
+        let products = await response.json();
+
+        let productList = document.getElementById("product-list");
+        productList.innerHTML = "";
+
+        products.forEach(product => {
+            let productItem = document.createElement("div");
+            productItem.classList.add("product");
+
+            productItem.innerHTML = `
+                <img src="default.jpg" alt="${product.name}" width="150">
+                <h3>${product.name}</h3>
+                <p>${product.price}</p>
+
+                <button onclick="alert('Anda membeli ${product.name}')">Beli</button>
+            `;
+
+            productList.appendChild(productItem);
+        });
+    }
+
+    loadProducts();
+</script>
+
